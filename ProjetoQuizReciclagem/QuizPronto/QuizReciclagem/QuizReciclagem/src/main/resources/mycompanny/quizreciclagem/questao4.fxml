@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="520.0" prefWidth="929.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mycompanny.quizreciclagem.Controladores">
+   <children>
+      <ImageView fitHeight="525.0" fitWidth="936.0" layoutX="-5.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Q4.PNG" />
+         </image>
+      </ImageView>
+      <RadioButton fx:id="Q4Errada2" layoutX="297.0" layoutY="328.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="456.0" text="Brasil" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="resposta4" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="Q4Errada1" layoutX="297.0" layoutY="220.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="365.0" text="Coreia do Sul" textFill="WHITE" toggleGroup="$resposta4">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="Q4Certa" layoutX="297.0" layoutY="441.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="411.0" text="Alemanha" textFill="WHITE" toggleGroup="$resposta4" wrapText="true">
+         <font>
+            <Font size="16.0" />
+         </font></RadioButton>
+      <Button fx:id="proximo4" layoutX="859.0" layoutY="467.0" mnemonicParsing="false" onAction="#mudarParaQ5" prefHeight="19.0" prefWidth="48.0" style="-fx-background-color: #b4f11a;" text="&gt;" />
+      
+   </children>
+</Pane>

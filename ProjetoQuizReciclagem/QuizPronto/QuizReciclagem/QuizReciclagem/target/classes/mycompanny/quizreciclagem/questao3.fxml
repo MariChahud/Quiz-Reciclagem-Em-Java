@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="505.0" prefWidth="928.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mycompanny.quizreciclagem.Controladores">
+   <children>
+      <ImageView fitHeight="532.0" fitWidth="1179.0" layoutY="-13.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Q3.png" />
+         </image>
+      </ImageView>
+      <RadioButton fx:id="Q3Errada1" layoutX="296.0" layoutY="306.0" mnemonicParsing="false" prefHeight="66.0" prefWidth="505.0" text="Azul - Metal, Vermelho - Plástico, Verde - Lixo orgânico, Marrom - Vidro,  Amarelo - Papel," textFill="WHITE" wrapText="true">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="resposta3" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="Q3Certa" layoutX="296.0" layoutY="199.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="470.0" text="Amarelo - Metal, Azul - Papel, Vermelho - Plástico, Verde - Vidro, Marrom - Orgânico" textFill="WHITE" toggleGroup="$resposta3" wrapText="true">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="Q3Errada2" layoutX="306.0" layoutY="354.0" mnemonicParsing="false" prefHeight="187.0" prefWidth="537.0" text="Amarelo - Lixo orgânico, Azul - Papel, Vermelho - Plástico, Verde - Vidro, Marrom - Não reciclável" textFill="WHITE" toggleGroup="$resposta3" wrapText="true">
+         <font>
+            <Font size="16.0" />
+         </font></RadioButton>
+      <Button layoutX="866.0" layoutY="466.0" mnemonicParsing="false" onAction="#mudarParaQ4" prefHeight="19.0" prefWidth="48.0" style="-fx-background-color: #b4f11a;" text="&gt;" />
+      
+   </children>
+</Pane>

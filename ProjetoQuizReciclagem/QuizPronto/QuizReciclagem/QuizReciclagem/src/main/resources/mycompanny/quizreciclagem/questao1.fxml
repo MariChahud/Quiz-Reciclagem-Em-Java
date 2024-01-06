@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="521.0" prefWidth="932.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mycompanny.quizreciclagem.Controladores">
+   <children>
+      <ImageView fitHeight="539.0" fitWidth="1045.0" layoutX="-7.0" layoutY="-7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Q1.png" />
+         </image>
+      </ImageView>
+      <RadioButton fx:id="Q1Errada1" layoutX="300.0" layoutY="331.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="456.0" text="Transformação de um objeto inorgânico em orgânico " textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="resposta1" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="Q1Certa" layoutX="300.0" layoutY="221.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="498.0" text="Transformação de resíduos descartáveis em novos produtos" textFill="WHITE" toggleGroup="$resposta1">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="Q1Errada2" layoutX="300.0" layoutY="447.0" mnemonicParsing="false" text="Processo de mudança de estado físico dos objetos " textFill="WHITE" toggleGroup="$resposta1">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </RadioButton>
+      <Button layoutX="861.0" layoutY="482.0" mnemonicParsing="false" onAction="#mudarParaQ2" prefHeight="19.0" prefWidth="48.0" style="-fx-background-color: #b4f11a;" text="&gt;" />
+   </children>
+</Pane>
